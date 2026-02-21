@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700;800&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Carbon black F1 background */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 95%;
+
+    /* F1 Ferrari Red */
+    --primary: 4 90% 52%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 0 0% 72%;
+
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 4 90% 52%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 13%;
+    --input: 0 0% 13%;
+    --ring: 4 90% 52%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 3%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 4 90% 52%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 11%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 13%;
+    --sidebar-ring: 4 90% 52%;
+
+    /* Custom tokens */
+    --glass-border: 0 0% 18%;
+    --glass-highlight: 0 0% 100%;
+    --text-hero: 0 0% 99%;
+    --text-secondary: 0 0% 55%;
+    --text-tertiary: 0 0% 32%;
+    --card-shine: 0 0% 12%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 8%;
+
+    /* F1 specific */
+    --red-glow: 4 90% 52%;
+    --red-deep: 0 85% 36%;
+    --carbon: 0 0% 6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Barlow', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: hsl(0, 0%, 4%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* F1 radial ambient glow */
+@keyframes ambient-pulse {
+  0%, 100% { opacity: 0.18; transform: scale(1); }
+  50% { opacity: 0.26; transform: scale(1.04); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 24px hsla(4,90%,52%,0.25), 0 0 0 1px hsla(4,90%,52%,0.2); }
+  50% { box-shadow: 0 0 40px hsla(4,90%,52%,0.45), 0 0 0 1px hsla(4,90%,52%,0.35); }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2.4s ease-in-out infinite;
+}
+
+.ambient-glow {
+  animation: ambient-pulse 4s ease-in-out infinite;
+}
+
+/* Carbon fiber texture overlay */
+.carbon-texture {
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      hsla(0,0%,100%,0.008) 2px,
+      hsla(0,0%,100%,0.008) 4px
+    );
+}
