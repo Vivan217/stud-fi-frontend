@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+# STUD-FI – Financial Command Center for Students
 
-## Project info
+STUD-FI is a modern financial management platform designed to help students track expenses, manage budgets, and gain full control over their financial life.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This repository contains the frontend application built with a modern React + Vite stack.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- Secure Authentication
+- Expense Tracking
+- Budget Monitoring
+- Real-time Financial Overview
+- Clean, Responsive UI
+- Optimized Performance with Vite
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Tech Stack
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
+- Axios (API Communication)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📦 Installation & Local Development
 
-## Can I connect a custom domain to my Lovable project?
+Make sure you have Node.js (v18+) installed.
 
-Yes, you can!
+Clone the repository:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+git clone https://github.com/Vivan217/stud-fi-frontend.git
+cd stud-fi-frontend
+Install dependencies:
+npm install
+Run development server:
+npm run dev
+The application will run on:
+http://localhost:8080
+🌐 Deployment
+This frontend is optimized for deployment on Vercel.
+Production build:
+npm run build
+🔐 Environment Variables
+Create a .env file in the root directory:
+VITE_API_URL=https://your-backend-url.com
+📌 Project Structure
+src/
+  components/
+  pages/
+  services/
+  hooks/
+  assets/
+📄 License
+This project is proprietary and developed by Vishesh Aggarwal.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+🔥 This looks:
+
+- Clean
+- Professional
+- Startup-ready
+- Recruiter-impressive
+- No Lovable trace
+
+---
+
+Commit it:
+
+```bash
+git add README.md
+git commit -m "Updated README professionally"
+git push
